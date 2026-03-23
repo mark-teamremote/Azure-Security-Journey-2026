@@ -1,0 +1,19 @@
+# Ignore local environment variables (where you might store secrets)
+.env
+*.env
+
+# Ignore Terraform local state (crucial if you start using IaC)
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Ignore Azure CLI local state/logs
+.azure/
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code specific settings that might contain local paths
+.vscode/
