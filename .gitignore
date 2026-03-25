@@ -17,3 +17,23 @@ Thumbs.db
 
 # Ignore VS Code specific settings that might contain local paths
 .vscode/
+
+# Secrets and Environment Variables
+.env
+.env.local
+secrets.json
+*.pfx
+*.publishsettings
+
+# --- Azure Security Lab Ignore List ---
+.env
+secrets.json
+*.pfx
+*.publishsettings
+.vs/
+.vscode/
+
+# Build and Temp files
+bin/
+obj/
+*.log
