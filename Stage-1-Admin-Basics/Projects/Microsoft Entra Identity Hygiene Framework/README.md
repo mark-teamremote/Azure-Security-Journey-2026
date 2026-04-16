@@ -1,5 +1,38 @@
 # Microsoft Entra Identity Hygiene Framework
 
+## Overview
+This project documents a lightweight Microsoft Entra ID identity hygiene lab focused on guest access governance, standing privilege discovery, and MFA readiness review.
+
+The goal was to build a small but realistic baseline identity scenario, identify key risks, and implement a first governance control without moving too far beyond the current `AZ-104` learning stage.
+
+Improved Microsoft Entra identity governance by implementing a guest access review workflow, resulting in a more controlled approach to external access while documenting future Conditional Access hardening steps.
+
+
+## Business Scenario
+Organizations often accumulate identity risk through stale accounts, guest access that is not regularly reviewed, standing privileged assignments, and users who are not ready for MFA enforcement.
+
+This lab simulates a small identity cleanup and governance scenario inside Microsoft Entra ID and focuses on building a more controlled approach to guest access and privilege visibility.
+
+## What This Project Demonstrates
+- Microsoft Entra ID user and guest identity administration
+- direct privileged role assignment review
+- guest access governance using Access Reviews
+- MFA readiness gap identification
+- practical identity hygiene documentation for future security hardening
+
+## Project Structure
+```text
+Microsoft Entra Identity Hygiene Framework/
+|-- README.md
+|-- screenshots/
+|   |-- 01-member-users-baseline.png
+|   |-- 02-standing-global-admins.png
+|   |-- 03-guest-users-present.png
+|   |-- 04-no-mfa-user-baseline.png
+|   |-- 05-guest-access-review-created.png
+|   |-- 06-lab-users-group-members.png
+```
+
 ## Day 1 Notes
 
 ### Objective
