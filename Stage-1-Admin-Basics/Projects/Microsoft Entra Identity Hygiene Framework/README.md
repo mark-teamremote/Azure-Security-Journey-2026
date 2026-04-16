@@ -95,4 +95,38 @@ Improved Microsoft Entra identity governance by implementing a guest access revi
 ### Outcome
 The tenant now includes a working guest governance control, while more advanced policy-based identity hardening has been identified as a future extension better aligned with AZ-500.
 
+## Screenshots
 
+### Member Users Baseline
+![Member users baseline](./screenshots/01-member-users-baseline.png)
+
+### Standing Global Administrators
+![Standing global administrators](./screenshots/02-standing-global-admins.png)
+
+### Guest Users Present
+![Guest users present](./screenshots/03-guest-users-present.png)
+
+### No MFA User Baseline
+![No MFA user baseline](./screenshots/04-no-mfa-user-baseline.png)
+
+### Guest Access Review Created
+![Guest access review created](./screenshots/05-guest-access-review-created.png)
+
+### Lab Users Group Members
+![Lab users group members](./screenshots/06-lab-users-group-members.png)
+
+## Lessons Learned
+- identity hygiene work is stronger when it includes governance controls, not just account cleanup
+- guest access should be reviewed through a repeatable process rather than manually handled case by case
+- standing privileged access is easy to identify but should be improved carefully and deliberately
+- MFA readiness gaps are easier to document when test identities are structured intentionally
+- Conditional Access introduces stronger policy control, but it also introduces broader tenant design decisions that are better handled in a more security-focused phase
+
+## Future Extension
+This lighter version fits well within Stage 1 and supports `AZ-104` identity and access learning.
+
+A future extension of this project under `AZ-500` could include:
+- Conditional Access implementation after disabling Security Defaults
+- stronger privileged access controls
+- deeper MFA enforcement analysis
+- broader identity protection and governance workflows
