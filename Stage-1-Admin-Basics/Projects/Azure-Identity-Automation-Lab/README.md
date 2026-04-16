@@ -3,6 +3,8 @@
 ## Overview
 This project demonstrates identity provisioning and validation in Microsoft Entra ID using PowerShell. It is designed as a practical portfolio project that reflects how cloud administrators and security engineers approach repeatable onboarding tasks in real environments.
 
+Built a Microsoft Entra ID onboarding automation workflow that reduced manual user provisioning steps by using idempotent checks and post-run verification for repeatable lab administration.
+
 The focus is not only on creating users, but on making the workflow safer to rerun and easier to verify.
 
 ## Business Scenario
@@ -106,7 +108,7 @@ This project is useful because it shows more than basic scripting. It reflects t
 ## Portfolio Positioning
 A strong summary for this project is:
 
-"Built a Microsoft Entra ID onboarding automation workflow in PowerShell with idempotent checks, post-configuration steps, and verification logic to support repeatable identity provisioning in a lab environment."
+"Built a Microsoft Entra ID onboarding automation workflow that reduced manual user provisioning steps by using idempotent checks, post-run verification, and safer rerun logic for repeatable lab administration."
 
 ## Recruiter and Client Value
 This project supports conversations around:
@@ -115,3 +117,5 @@ This project supports conversations around:
 - access governance hygiene
 - Azure admin support
 - hybrid cloud operational readiness
+
+
