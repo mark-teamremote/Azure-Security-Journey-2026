@@ -5,7 +5,8 @@ This project documents a lightweight Azure virtual machine baseline focused on s
 
 The goal was to create a simple but practical VM setup that demonstrates foundational `AZ-104` skills in compute, networking, and operational hygiene without overcomplicating the environment.
 
-Built a secure Azure VM baseline that reduced unnecessary exposure by using private-only networking, basic monitoring visibility, and auto-shutdown controls for cost-conscious administration.
+Built a secure Azure VM baseline that reduced unnecessary exposure by deploying the VM without a public IP, adding basic monitoring visibility, and enabling auto-shutdown for cost-conscious administration.
+
 
 ## Business Scenario
 A common early cloud administration task is deploying a virtual machine for testing, administration, or internal workloads without exposing it unnecessarily to the internet.
@@ -15,7 +16,7 @@ This lab simulates a safer starting point by deploying a Linux VM with no public
 ## What This Project Demonstrates
 - Azure virtual machine deployment
 - virtual network and subnet placement
-- private-only networking baseline
+- reduced inbound exposure by deploying the VM without a public IP
 - reduced administrative exposure
 - cost-aware VM operations
 - basic monitoring visibility in Azure
@@ -46,11 +47,13 @@ The VM was deployed with the following baseline choices:
 - Boot diagnostics: enabled with managed storage
 
 ## Key Security and Cost Decisions
-- no public IP was assigned to the VM
+- the VM was deployed without a public IP, preventing direct inbound internet access
 - no inbound admin exposure was enabled by default
 - auto-shutdown was enabled to reduce unnecessary runtime cost
 - the VM was placed in a dedicated lab resource group for easier cleanup
 - the configuration intentionally stayed simple and aligned with Stage 1 administration goals
+- Azure still indicated default outbound internet access behavior for the subnet, which is a useful reminder that removing a public IP does not automatically eliminate all outbound connectivity paths
+
 
 ## Screenshots
 ![VM Overview](./screenshots/01-vm-overview.png)
