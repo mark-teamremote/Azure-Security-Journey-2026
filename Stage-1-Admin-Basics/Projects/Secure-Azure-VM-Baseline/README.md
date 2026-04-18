@@ -11,7 +11,7 @@ Built a secure Azure VM baseline that reduced unnecessary exposure by deploying 
 ## Business Scenario
 A common early cloud administration task is deploying a virtual machine for testing, administration, or internal workloads without exposing it unnecessarily to the internet.
 
-This lab simulates a safer starting point by deploying a Linux VM with no public IP, placing it inside a dedicated virtual network, and enabling basic operational controls such as auto-shutdown and platform monitoring visibility.
+This lab simulates a safer starting point by deploying a Linux VM without a public IP, placing it inside a dedicated virtual network, and enabling basic operational controls such as auto-shutdown and platform monitoring visibility.
 
 ## What This Project Demonstrates
 - Azure virtual machine deployment
@@ -48,7 +48,7 @@ The VM was deployed with the following baseline choices:
 
 ## Key Security and Cost Decisions
 - the VM was deployed without a public IP, preventing direct inbound internet access
-- no inbound admin exposure was enabled by default
+- no inbound administrative exposure was enabled by default
 - auto-shutdown was enabled to reduce unnecessary runtime cost
 - the VM was placed in a dedicated lab resource group for easier cleanup
 - the configuration intentionally stayed simple and aligned with Stage 1 administration goals
