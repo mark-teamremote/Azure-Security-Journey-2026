@@ -21,6 +21,28 @@ This lab simulates a safer starting point by deploying a Linux VM without a publ
 - cost-aware VM operations
 - basic monitoring visibility in Azure
 
+## Simple Architecture View
+
+```mermaid
+flowchart TD
+    RG["Resource Group: RG-VM-Baseline-Lab"]
+    VNET["Virtual Network: vm-baseline-vnet"]
+    SUBNET["Subnet: default"]
+    VM["Linux VM: vm-baseline-01<br/>Ubuntu Server 24.04 LTS"]
+    MON["Azure Monitor / basic platform visibility"]
+    AUTO["Auto-shutdown enabled"]
+    NOPIP["No Public IP<br/>Reduced direct internet exposure"]
+
+    RG --> VNET
+    VNET --> SUBNET
+    SUBNET --> VM
+    VM --> MON
+    VM --> AUTO
+    VM --> NOPIP
+```
+
+This diagram shows the baseline intent of the lab: keep the environment simple, reduce direct exposure, and preserve basic operational visibility without overbuilding the first-stage design.
+
 ## Project Structure
 ```text
 Secure-Azure-VM-Baseline/

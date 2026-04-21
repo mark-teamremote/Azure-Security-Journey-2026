@@ -2,6 +2,8 @@
 
 This repository documents my transition from `17+ years` of enterprise network and security engineering into Azure administration, hybrid cloud security, and cloud security architecture.
 
+It is designed as a recruiter-friendly portfolio that highlights practical Azure administration, Microsoft Entra identity work, hybrid connectivity, and security-minded infrastructure decisions.
+
 It is built as a practical portfolio, not just a study tracker. The focus is on real-world Azure skills that map to client and employer needs:
 - Azure administration and operations
 - Microsoft Entra ID and identity automation
@@ -18,6 +20,34 @@ I bring a senior infrastructure background shaped by enterprise environments acr
 - project delivery across multi-country environments
 
 This Azure portfolio is where I translate that experience into cloud-focused implementation, documentation, and security architecture work.
+
+## Start Here
+
+If you are visiting this repository for the first time, these are the best entry points:
+
+### Best project for Azure admin and identity proof
+- [Azure Identity Automation Lab](./Stage-1-Admin-Basics/Projects/Azure-Identity-Automation-Lab/)
+
+### Best project for secure Azure administration
+- [Secure Azure VM Baseline](./Stage-1-Admin-Basics/Projects/Secure-Azure-VM-Baseline/)
+
+### Best project for identity governance and hygiene
+- [Microsoft Entra Identity Hygiene Framework](./Stage-1-Admin-Basics/Projects/Microsoft%20Entra%20Identity%20Hygiene%20Framework/)
+
+### Stage 1 project index
+- [Stage 1 Admin Projects](./Stage-1-Admin-Basics/Projects/README.md)
+
+### Architecture direction
+- [Stage 2: Azure Architecture and Solution Design](./Stage-2-AZ-305-Architecture/README.md)
+
+## For Recruiters And Hiring Managers
+
+This repository is designed to show:
+
+- practical Azure administration and identity work
+- enterprise security thinking carried into cloud environments
+- hybrid connectivity awareness informed by real infrastructure experience
+- clear documentation of business context, technical choices, and security considerations
 
 ## Portfolio Roadmap
 
@@ -68,6 +98,7 @@ The current emphasis is:
 
 ## Repository Structure
 - [Stage-1-Admin-Basics](./Stage-1-Admin-Basics/) for `AZ-104`-aligned admin and identity projects
+- [Stage-1-Admin-Basics/Projects](./Stage-1-Admin-Basics/Projects/README.md) for the main Stage 1 project index
 - [Stage-2-AZ-305-Architecture](./Stage-2-AZ-305-Architecture/) for architecture, resilience, and `AZ-305` preparation
 - [Stage-3-AZ-500-Labs](./Stage-3-AZ-500-Labs/) for Azure security engineering projects
 - [Stage-4-Terraform-Projects](./Stage-4-Terraform-Projects/) for Infrastructure as Code projects
