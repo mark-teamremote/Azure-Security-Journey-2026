@@ -2,7 +2,7 @@
 Connect-MgGraph -Scopes "User.ReadWrite.All"
 
 # 2. Define your domain (Match this to your Create script)
-$Domain = "yourtenant.onmicrosoft.com"
+$Domain = "contoso-lab.onmicrosoft.com"
 
 # 3. Delete the 10 Lab Users
 1..10 | ForEach-Object {

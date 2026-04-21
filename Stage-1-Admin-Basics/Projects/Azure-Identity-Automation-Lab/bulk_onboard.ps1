@@ -1,5 +1,5 @@
 # --- CONFIGURATION ---
-$Domain = "teamremote.onmicrosoft.com"
+$Domain = "contoso-lab.onmicrosoft.com"
 $Password = "Str0ng!Passw0rd2026#Azure"
 
 # --- USERS ---

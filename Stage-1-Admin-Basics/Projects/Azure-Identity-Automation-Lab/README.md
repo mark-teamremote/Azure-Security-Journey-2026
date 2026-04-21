@@ -56,12 +56,12 @@ Main script:
 
 ## Sample Console Output
 ```text
-Processing: SG_Audit_User@teamremote.onmicrosoft.com
-CREATED: SG_Audit_User@teamremote.onmicrosoft.com
+Processing: SG_Audit_User@contoso-lab.onmicrosoft.com
+CREATED: SG_Audit_User@contoso-lab.onmicrosoft.com
 UPDATED: Job title set
 CONFIRMED: User exists in Entra ID
 
-Processing: NY_NetOps_Vendor@teamremote.onmicrosoft.com
+Processing: NY_NetOps_Vendor@contoso-lab.onmicrosoft.com
 SKIPPED: User already exists
 UPDATED: Job title set
 CONFIRMED: User exists in Entra ID
@@ -94,6 +94,7 @@ This project is useful because it shows more than basic scripting. It reflects t
 
 ## Security and Operational Notes
 - the script currently uses inline sample values for the tenant domain and password, which is fine for controlled lab use but should be moved to a safer pattern for production-style automation
+- the public README uses a sanitized sample tenant domain to avoid exposing environment-identifying details unnecessarily
 - the current version is positioned as a lab and portfolio project, not a production deployment tool
 - future versions can externalize user input, improve secret handling, and add audit logging
 
